@@ -1,0 +1,54 @@
+* {
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* styles.css */
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f4f6; /* เปลี่ยนสีพื้นหลังตามต้องการ */
+  }
+  
+  .form-wrapper {
+    width: 30%;
+    max-width: 900px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+  }
+
+  .background-container {
+    background-image: url('../photos/se1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh; 
+  }
+  
+  .form-container {
+    background-image: url('../photos/FFFF.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+  }
+ 
+  .form-container1 {
+    background-image: url('../photos/bbbbb.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  

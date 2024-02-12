@@ -50,9 +50,9 @@ export default function Header() {
   };
 
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-zinc-400"> {/* เพิ่ม className เพื่อให้แถบบนมีสีเขียว */}
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl">Hello, {user?.id ? user.name : 'Guest'}</a>
+        <a className="btn btn-ghost text-xl"> {user?.id ? user.name : 'booking.com'}</a>
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">

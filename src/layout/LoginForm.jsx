@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { useState } from "react";
 import useAuth from '../hooks/useAuth';
+import '../layout/styles.css';
 
 export default function LoginForm() {
   const { setUser } = useAuth();
@@ -31,8 +32,9 @@ export default function LoginForm() {
   };
 
   return (
-    <div>
-      <form onSubmit={handleLogin} className="space-y-5">
+    <div className="form-container">
+      <form onSubmit={handleLogin} className="form-wrapper">
+        <div className="text-3xl mb-5 text-center font-bold text-gray-800">Log In</div>
         <div className="form-control">
           <label className="label">
             <span className="label-text">Email</span>
@@ -88,10 +90,10 @@ export default function LoginForm() {
             </label>
           </div>
         </div>
-        <div className="flex gap-5">
-          <button type="submit" className="btn btn-outline btn-info mt-7">Login</button>
+        <div className="flex justify-center">
+          <button type="submit" className="btn btn-primary mt-7 px-10 py-3 rounded-lg text-white font-bold">Log In</button>
         </div>
       </form>
     </div>
-  );
+  );  
 }
